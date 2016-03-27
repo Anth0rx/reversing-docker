@@ -8,3 +8,18 @@
   + __[PyCrypto](https://github.com/dlitz/pycrypto)__ - The Python Cryptography Toolkit
   + __[OpenPyxl](https://pypi.python.org/pypi/openpyxlhttps://pypi.python.org/pypi/openpyxl)__ - Python library to read/write Excel 2007 xlsx/xlsm files
   + __[ujson](https://pypi.python.org/pypi/ujson)__ - Ultra fast JSON parsing libraryUltra fast JSON parsing library
+
+### Usage
+This image mounts a volume at `/workdir`.<br>
+Specify a local workdir with `<my_workdir>`.
+
+__Pull with:__
+
+```bash
+sudo docker pull anthorx/reversing-docker
+```
+
+__And finally run with:__
+```bash
+sudo docker run --rm -it -v <my_workdir>:/workdir anthorx/reversing-docker
+```
