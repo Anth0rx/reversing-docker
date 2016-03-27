@@ -26,4 +26,7 @@ RUN pip install distorm3 openpyxl ujson pycrypto
 
 WORKDIR /workdir
 
+ADD ./bash_tweaks/terminal-colors /root/
+ADD ./bash_tweaks/.bashrc /root/
+
 ENTRYPOINT bash
