@@ -2,7 +2,7 @@ FROM alpine:edge
 
 ADD repositories /etc/apk/repositories
 
-RUN apk --no-cache add bash build-base capstone-dev@testing curl file gdb git patch python-dev py-pip
+RUN apk --no-cache add bash build-base capstone-dev@testing curl file gdb git ltrace patch python-dev py-pip
 
 WORKDIR /opt/
 
@@ -28,5 +28,6 @@ WORKDIR /workdir
 
 ADD ./bash_tweaks/terminal-colors /root/
 ADD ./bash_tweaks/.bashrc /root/
+ADD ./configs/.radare2rc /root/
 
 ENTRYPOINT bash
