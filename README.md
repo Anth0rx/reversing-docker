@@ -23,3 +23,8 @@ __And finally run with:__
 ```bash
 sudo docker run --rm -it -v <my_workdir>:/workdir anthorx/reversing-docker
 ```
+
+__To upgrade system and tools run the following inside a running container:__
+```bash
+upgrade
+```
