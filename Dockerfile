@@ -26,8 +26,10 @@ RUN pip install distorm3 openpyxl ujson pycrypto
 
 WORKDIR /workdir
 
-ADD ./bash_tweaks/terminal-colors /root/
-ADD ./bash_tweaks/.bashrc /root/
+# Add local files
+ADD ./bash_tweaks/* /root/
 ADD ./configs/.radare2rc /root/
+ADD ./scripts/* /root/scripts/
+RUN ln -s /root/scripts/upgrade.sh /usr/bin/upgrade
 
 ENTRYPOINT bash
