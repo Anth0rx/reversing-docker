@@ -28,8 +28,9 @@ WORKDIR /workdir
 
 # Add local files
 ADD ./bash_tweaks/* /root/
+RUN mv /root/motd /etc/motd
 ADD ./configs/.radare2rc /root/
 ADD ./scripts/* /root/scripts/
 RUN ln -s /root/scripts/upgrade.sh /usr/bin/upgrade
 
-ENTRYPOINT bash
+ENTRYPOINT clear && cat /etc/motd && bash
