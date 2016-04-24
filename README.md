@@ -10,21 +10,22 @@
   + __[ujson](https://pypi.python.org/pypi/ujson)__ - Ultra fast JSON parsing libraryUltra fast JSON parsing library
 
 ### Usage
-This image mounts a volume at `/workdir`.<br>
+This image mounts a volume at `/workdir`.
+
 Specify a local workdir with `<my_workdir>`.
 
-__Pull with:__
+###### Pull with:
 
 ```bash
 sudo docker pull anthorx/reversing-docker
 ```
 
-__And finally run with:__
+###### And finally run with:
 ```bash
 sudo docker run --rm -it -v <my_workdir>:/workdir anthorx/reversing-docker
 ```
 
-__To upgrade system and tools run the following inside a running container:__
+###### To upgrade system and tools run the following inside a running container:
 ```bash
 upgrade
 ```
