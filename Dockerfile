@@ -32,5 +32,6 @@ RUN mv /root/motd /etc/motd
 ADD ./configs/.radare2rc /root/
 ADD ./scripts/* /root/scripts/
 RUN ln -s /root/scripts/upgrade.sh /usr/bin/upgrade
+ADD entrypoint.sh /opt/
 
-ENTRYPOINT clear && cat /etc/motd && bash
+ENTRYPOINT /opt/entrypoint.sh 
