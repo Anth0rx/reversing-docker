@@ -15,7 +15,6 @@ WORKDIR /workdir
 ADD ./bash_tweaks/* /root/
 RUN mv /root/motd /etc/motd
 ADD ./configs/.radare2rc /root/
-ADD ./scripts/* /root/scripts/
 ADD entrypoint.sh /opt/
 
 ENTRYPOINT /opt/entrypoint.sh 
