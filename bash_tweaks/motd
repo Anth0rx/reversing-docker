@@ -10,12 +10,6 @@ Feel free to contribute at https://github.com/Anth0rx/reversing-docker.
 
 At the moment this image contains the following tools:
 	> radare2 - unix-like reverse engineering framework
-	> PEDA - Python Exploit Development Assistance for GDB
-	> Volatility with the follwing plugins:
-		> diStorm3 - Powerful Disassembler Library For x86/
-		> PyCrypto - The Python Cryptography Toolkit
-		> OpenPyxl - Python library to read/write Excel 2007 xlsx/xlsm files
-		> ujson - Ultra fast JSON parsing libraryUltra fast JSON parsing library
+	> Volatility
+        > binwalk
 
-To run a full system upgrade simply type: 
-	> upgrade
